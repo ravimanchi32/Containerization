@@ -11,7 +11,7 @@ COPY . /var/www/html
 # Set the working directory inside the container
 WORKDIR /var/www/html
 
-# Set an environment variable named "name" with the value "kanisolutions"
+# Set an environment variable named "name" with the value "kani solutions"
 
 # Start Apache when the container runs
 ENTRYPOINT ["apachectl", "-D", "FOREGROUND"]
