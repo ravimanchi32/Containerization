@@ -12,12 +12,6 @@
       copy:
         src: /var/lib/jenkins/workspace/k8s/playbooks/pod.yaml
         dest: /opt/playbooks
-
-    - name: COPY DEPLOYMENT FILE
-      copy:
-        src: /opt/playbooks/pod.yaml
-        dest: /opt/playbooks
-
     - name: CHECK FILE
       shell: ls -l /opt/playbooks/
       register: copy        
