@@ -7,7 +7,11 @@
       file:
         path: /opt/playbooks/
         state: directory
-        mode: "0755"      
+        mode: "0755"   
+     - name: COPY DEPLOYMENT FILE
+      copy:
+        src: /var/lib/jenkins/workspace/{{ JOB_NAME }}/playbooks/dep_svc.yml
+        dest: /opt/playbooks
 
     - name: COPY DEPLOYMENT FILE
       copy:
