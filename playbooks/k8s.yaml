@@ -42,3 +42,7 @@
     - name: PRINT DEPLOYMENT STATUS
       debug:
         var: get_deployment_status.stdout_lines
+
+    - name: PRINT SVC STATUS
+      debug:
+        var: get_svc_status.stdout_lines
