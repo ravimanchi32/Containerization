@@ -10,7 +10,7 @@
         mode: "0755"   
     - name: COPY DEPLOYMENT FILE
       copy:
-        src: /opt/ravi/workspace/ansible/playbooks/pod.yaml
+        src: /var/lib/jenkins/workspace/k8s/pod.yaml
         dest: /opt/playbooks
 
     - name: COPY DEPLOYMENT FILE
