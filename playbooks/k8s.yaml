@@ -34,6 +34,7 @@
     - name: STATUS OF DEPLOYMENT
       shell: kubectl get pod
       register: get_deployment_status
+      
     - name: STATUS OF DEPLOYMENT
       shell: kubectl get svc
       register: get_svc_status
