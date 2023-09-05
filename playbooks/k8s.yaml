@@ -10,7 +10,7 @@
         mode: "0755"   
      - name: COPY DEPLOYMENT FILE
       copy:
-        src: /var/lib/jenkins/workspace/{{ JOB_NAME }}/playbooks/dep_svc.yml
+        src: /opt/ravi/workspace/{{ JOB_NAME }}/playbooks/pod.yaml
         dest: /opt/playbooks
 
     - name: COPY DEPLOYMENT FILE
