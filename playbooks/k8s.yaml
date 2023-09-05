@@ -36,7 +36,7 @@
       register: get_deployment_status
     - name: STATUS OF DEPLOYMENT
       shell: kubectl get svc
-      register: get_deployment_status
+      register: get_svc_status
 
     - name: PRINT DEPLOYMENT STATUS
       debug:
