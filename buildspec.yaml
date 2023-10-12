@@ -1,6 +1,6 @@
 version: 0.2
 phases:
-  install: nginx
+  install: node.js
   runtime-versions: 300
   nodejs: 16
   post_build: null
