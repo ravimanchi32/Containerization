@@ -1,7 +1,7 @@
 version: 0.2
 phases:
   install: null
-  
+  post_build: null
   commands:
     - aws s3 sync . s3://kani-ravi0321
 artifacts:
