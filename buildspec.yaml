@@ -3,7 +3,7 @@ phases:
   install:
     runtime-versions:
       nodejs: 16
-  post_build: null
+  post_build: 300
   commands:
     - aws s3 sync . s3://kani-ravi0321
     - mkdir -p dist
