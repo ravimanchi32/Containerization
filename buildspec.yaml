@@ -1,7 +1,7 @@
 version: 0.2
 phases:
   install: htpd
-  runtime-versions: null
+  runtime-versions: 300
   nodejs: 16
   post_build: null
   commands:
