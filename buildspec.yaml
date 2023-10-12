@@ -6,5 +6,9 @@ phases:
   post_build: null
   commands:
     - aws s3 sync . s3://kani-ravi0321
+    - mkdir -p dist
+    - cp index.html dist/
 artifacts:
   files: "*/"
+  base-directory: dist
+  
