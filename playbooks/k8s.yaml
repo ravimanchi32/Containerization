@@ -20,7 +20,7 @@
       debug:
         var: copy.stdout_lines              
         
-    - name: DEPLOYMENT ON K8 CLUSTER
+    - name: DEPLOYMENT ON K8s CLUSTER
       shell: kubectl apply -f /opt/playbooks/pod.yaml
       register: deployment
 
